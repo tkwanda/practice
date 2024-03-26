@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{font-size: larger;
+        font-style: inherit;
+    text-align: center; }
+        h1{text-align: center;
+            color:#1a64d6;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            font-size: 34px;
+            line-height: 48px;
+        }
+            h2{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                font-size: 34px;
+                line-height: 48px;
+                font-weight: 400;
+            }
+            p{
+                text-align: center;
+                font-size: 18px;
+                font-family: monospace;
+                opacity: 0.7;
+                margin: 0;
+            }   
+            button{
+                font-size: 16px;
+                line-height: 22px;
+                padding: 16px 24px;
+                border-radius: 30px;
+                transition: all 200ms ease;
+                box-shadow: rgba(37,39,89,0.08) 0px 8px 8px 0;
+                cursor: pointer;
+                display: block;
+                margin: 20px auto;
+                border: 1px solid #1a64d6;
+                background: #1a64d6;
+                color: #fff;
+            }
+            button:hover{
+                background: white;
+                color: #1a64d6;
+                border: 1px solid #1a64d6;
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+            
+            }
+            li{
+                list-style: none;
+                text-align: center;
+                padding: 10px 0;
+                border-radius: 10px;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            li:hover{
+                background: #fffbef;
+            }
+            h3{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.17em;
+            }
+
+
+
+    </style>
+
+    
+</head>
+<body>
+    <h1>🌤️
+        <br>
+        Currently 21&deg; in Tokyo
+    </h1>
+    <h2>13&deg; / 
+        <strong>23&deg;</strong>
+    </h2>
+    <ul>
+        <li>
+        <h3>🌧️Tomorrow</h3>
+        <p> 10&deg; /<strong>22&deg;</strong></p>
+        </li>
+        <li>
+        <h3>🌥️Saturday</h3>
+        <p>15&deg; /<strong>17&deg;</strong></p>
+        </li>
+        <li>
+        <h3>☀️Sunday</h3>
+        <p>25&deg; /<strong>28&deg;</strong></p>
+        </li>
+    </ul>
+    
+        <button id="myButton">Change city</button><br>
+        <p>Coded by Trezer Konyango</p>
+        <script>
+            function changeCity() {
+              let city = prompt("What city do you live in?");
+              let temperature = prompt("What temperature is it?");
+              let heading = document.querySelector("h1");
+              if (temperature < 0) {
+                heading.innerHTML =
+                  "☹️<br />Currently " + temperature + "°C in " + city;
+              } else {
+                heading.innerHTML =
+                  "😄<br />Currently " + temperature + "°C in " + city;
+              }
+            }
+      
+            let changeButton = document.querySelector("button");
+            changeButton.addEventListener("click", changeCity);
+          </script>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisumu</title>
+    <style>
+        div{
+            display: block  ;
+        }
+        .project{
+            box-shadow: #ffdddd;
+            border-radius: 10px;
+            color: black;
+            width: 50%;
+            padding: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background: linear-gradient(#44e0e3, white);
+
+        }
+        button{
+            font-size: 16px;
+                line-height: 22px;
+                padding: 16px 24px;
+                border-radius: 30px;
+                transition: all 200ms ease;
+                box-shadow: rgba(37,39,89,0.08) 0px 8px 8px 0;
+                cursor: pointer;
+                display: block;
+                margin: 20px auto;
+                border: 1px solid #1a64d6;
+                background: #1a64d6;
+                color: #fff; 
+        }
+    </style>
+</head>
+<body>
+    <div class="project">
+    <h1>🌥️<br>Kisumu city</h1>
+    <h2>I love Kisumu city</h2>
+    <hr>
+    <img src="https://i0.wp.com/www.safari254.com/wp-content/uploads/2018/07/Kisumu-City.jpg" width="250" height="300">
+    <hr>
+    <p>
+        <strong>Kisumu</strong> is a port city located in Kenya, Africa.It is the <strong><em>third largest city</em></strong> in Kenya.
+        It is a beautiful city located right next to Lake Victoria. 
+        The climate in Kisumu is mostly hot and humid.
+         Most of my childhood was spent in Kisumu and i always enjoyed the weather,the weekend afternoon swimming sessions 
+         with my friends and watching sunsets at the lakeside.
+        Kisumu is definitely a perfect place for vacations.
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Kisumu">Read on wikipedia</a>
+    <button>Explore Kisumu!</button>
+    <script>
+        function exploreCity() {
+    let name = prompt("What is your name?");
+    if (name) {
+        alert("Hello " + name + ", thanks for showing interest! We'll get back to you soon.");
+    } else {
+        alert("Please enter your name");
+    }
+}
+
+let changeButton = document.querySelector("button");
+changeButton.addEventListener("click", exploreCity);
+    </script>
+    </div>
+</body>
+</html>
