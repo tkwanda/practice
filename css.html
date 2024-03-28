@@ -6,26 +6,32 @@
   <title>My Portfolio</title>
   <style>
     body {
+        text-align: center;
+        color: #fff;
       font-family: Arial, sans-serif;
+      font-size: larger;
       margin: 0;
       padding: 0;
+      background-image: url('https://images.pexels.com/photos/6562727/pexels-photo-6562727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-attachment: fixed;
     }
 
     header {
-      background-color: #333;
+      background-color: rgba(245, 40, 145, 0.3);
       padding: 20px;
       color: #fff;
       text-align: center;
     }
 
     .introduction {
-      background-color: #f0f0f0;
+      background-color: rgba(182, 154, 169, 0.15);
       padding: 20px;
       margin: 20px 0;
     }
 
     .skills {
-      background-color: #eaeaea;
+      background-color: rgba(182, 154, 169, 0.15);
       padding: 20px;
       margin: 20px 0;
     }
@@ -42,7 +48,7 @@
     }
 
     .contact {
-      background-color: #333;
+      background-color: rgba(245, 40, 145, 0.3)
       padding: 20px;
       color: #fff;
       text-align: center;
@@ -53,29 +59,72 @@
       .skills,
       .contact {
         padding: 10px;
+        font-weight: 600;
       }
     }
+    nav {
+            background-color: ;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+    nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(182, 154, 169, 0.15);
+        }
   </style>
 </head>
 <body>
   <header>
     <h1>Trezer Konyango</h1>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
   </header>
+
 
   <section class="introduction">
     <h2>Introduction</h2>
+    <img src="trezer.jpg" alt="beautiful girl" width="250" length="250">
     <p>
-      Hello! I'm Trezer and i'm a budding web developer!Feel free to reach out!
+      Hello! I'm Trezer and i'm a budding web developer!
+      I have always had a passion for programming and development and i'm currently a beginner majoring on web development. My strongest areas are html,css and javascript.<br>Feel free to reach out!
     </p>
   </section>
 
   <section class="skills">
     <h2>Skills</h2>
     <ul>
-      <li>skill 1</li>
-      <li>skill 2</li>
-      <li>skill 3</li>
-      <li>skill 4</li>
+      <li><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/React_(software)">React</a></li>
     </ul>
   </section>
 
@@ -83,6 +132,7 @@
     <h2>Contact Information</h2>
     <p>Email: konyangotrezer05@gmail.com</p>
     <p>Social Media: <a href="#">Twitter</a>, <a href="#">LinkedIn</a></p>
+    <p>Coded by Trezer Konyango</p>
   </footer>
 </body>
 </html>
